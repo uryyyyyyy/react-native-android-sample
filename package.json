@@ -5,24 +5,31 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start --skipflow",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
-    "test": "jest",
+    "test": "mocha --require ts-node/register ./src/__tests__/*-test.ts",
     "tsc": "tsc"
   },
   "dependencies": {
     "react": "15.4.2",
     "react-native": "0.41.2",
-    "react-native-sm-transformer": "1.0.3"
+    "react-native-sm-transformer": "1.0.3",
+    "react-redux": "5.0.3",
+    "redux": "3.6.0"
   },
   "devDependencies": {
+    "@types/chai": "3.4.35",
+    "@types/enzyme": "2.7.5",
+    "@types/mocha": "2.2.39",
     "@types/react": "15.0.12",
     "@types/react-native": "0.37.13",
-    "babel-jest": "19.0.0",
-    "babel-preset-react-native": "1.9.1",
-    "jest": "19.0.2",
+    "@types/react-redux": "4.4.36",
+    "@types/redux": "3.6.0",
+    "@types/sinon": "1.16.35",
+    "chai": "3.5.0",
+    "enzyme": "2.7.1",
+    "mocha": "3.2.0",
     "react-test-renderer": "15.4.2",
+    "sinon": "1.17.7",
+    "ts-node": "2.1.0",
     "typescript": "2.2.1"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
