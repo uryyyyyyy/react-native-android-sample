@@ -6,6 +6,6 @@
 
 import React from 'react';
 import {AppRegistry} from 'react-native';
-import {ReactNativeAndroidSample} from './dist/app'
+import {App} from './dist/app'
 
 AppRegistry.registerComponent('reactNativeAndroidSample', () => App);
