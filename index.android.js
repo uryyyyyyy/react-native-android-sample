@@ -12,11 +12,20 @@ import {
   View
 } from 'react-native';
 
+import {logging} from './dist/app'
+
 export default class reactNativeAndroidSample extends Component {
+
+  myAction() {
+    console.log('js');
+  }
+
   render() {
+    logging()
+    console.log('js');
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
+        <Text style={styles.welcome} onPress={() => this.myAction()}>
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
