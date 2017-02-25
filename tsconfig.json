@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noUnusedLocals" : true,
+    "target": "es6",
+    "module": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "jsx": "react-native"
+  },
+  "exclude": [
+    "index.android.js",
+    "dist",
+    "node_modules"
+  ]
+}
