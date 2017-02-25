@@ -5,11 +5,13 @@
     "target": "es6",
     "module": "commonjs",
     "noImplicitAny": true,
-    "rootDir": "src",
     "moduleResolution": "node",
     "sourceMap": true,
     "jsx": "react"
   },
+  "include": [
+    "../src"
+  ],
   "exclude": [
     "index.android.js",
     "dist",
