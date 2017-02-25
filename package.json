@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start --skipflow",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
-    "test": "mocha --require ts-node/register ./src/__tests__/*-test.ts",
+    "test": "mocha ./test-require.js ./src/**/*-test.tsx",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -27,6 +27,9 @@
     "chai": "3.5.0",
     "enzyme": "2.7.1",
     "mocha": "3.2.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-native-mock": "^0.3.1",
     "react-test-renderer": "15.4.2",
     "sinon": "1.17.7",
     "ts-node": "2.1.0",

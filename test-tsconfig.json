@@ -3,13 +3,12 @@
     "strictNullChecks": true,
     "noUnusedLocals" : true,
     "target": "es6",
-    "module": "es6",
+    "module": "commonjs",
     "noImplicitAny": true,
-    "moduleResolution": "node",
     "rootDir": "src",
-    "outDir": "./dist/",
+    "moduleResolution": "node",
     "sourceMap": true,
-    "jsx": "react-native"
+    "jsx": "react"
   },
   "exclude": [
     "index.android.js",

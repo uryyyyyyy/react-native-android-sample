@@ -1,10 +1,5 @@
-
 import * as React from 'react';
-import {
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import {StyleSheet, Text, View, Button} from 'react-native';
 
 const styles: any = StyleSheet.create({
   container: {
@@ -25,22 +20,35 @@ const styles: any = StyleSheet.create({
   },
 });
 
-export class ReactNativeAndroidSample extends React.Component<{}, {}> {
+interface Props {}
+
+interface State {
+  point: number
+}
+
+export class App extends React.Component<Props, State> {
+
+  constructor() {
+    super();
+    this.state = {
+      point: 0
+    };
+  };
 
   render() {
-    console.log('hello')
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          {`Point: ${this.state.point}`}
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+        <Button
+          onPress={() => this.setState({point: this.state.point + 3})}
+          title="Increment"
+        />
+        <Button
+          onPress={() => this.setState({point: this.state.point - 2})}
+          title="Decrement"
+        />
       </View>
     );
   }

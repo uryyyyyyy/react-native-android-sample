@@ -8,4 +8,4 @@ import React from 'react';
 import {AppRegistry} from 'react-native';
 import {ReactNativeAndroidSample} from './dist/app'
 
-AppRegistry.registerComponent('reactNativeAndroidSample', () => ReactNativeAndroidSample);
+AppRegistry.registerComponent('reactNativeAndroidSample', () => App);
