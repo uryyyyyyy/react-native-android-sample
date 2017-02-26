@@ -4,7 +4,7 @@
     "noUnusedLocals" : true,
     "target": "ES2017",
     "module": "commonjs",
-    "lib": ["dom", "ES2016"],
+    "lib": ["dom", "ES2017"],
     "noImplicitAny": true,
     "moduleResolution": "node",
     "sourceMap": true,
