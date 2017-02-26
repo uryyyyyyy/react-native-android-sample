@@ -30,4 +30,10 @@ describe('Counter', () => {
     assert.deepEqual(spyCB.calledOnce, true);
     assert.deepEqual(spyCB.calledWith(3), true);
   });
+
+  it('async test', async() => {
+    const a = await Promise.resolve(2);
+    console.log('async done'); //呼ばれるはず
+    assert.deepEqual(a, 2);
+  });
 });
